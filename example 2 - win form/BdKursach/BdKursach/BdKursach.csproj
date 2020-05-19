@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB913ACD-2975-4EB3-A30E-56FB0803E520}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BdKursach</RootNamespace>
+    <AssemblyName>BdKursach</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnotherStudentDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnotherStudentDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalStudentDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalStudentDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FirstDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirstDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FirstDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirstDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormList.Designer.cs">
+      <DependentUpon>FormDormList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegAdress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegAdress.Designer.cs">
+      <DependentUpon>FormRegAdress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoomAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoomAdd.Designer.cs">
+      <DependentUpon>FormRoomAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoomList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoomList.Designer.cs">
+      <DependentUpon>FormRoomList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudAdd.Designer.cs">
+      <DependentUpon>FormStudAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudCat.Designer.cs">
+      <DependentUpon>FormStudCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudList.Designer.cs">
+      <DependentUpon>FormStudList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Room11DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Room11DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Room1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Room1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudCatDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudCatDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudListDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudListDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormList.resx">
+      <DependentUpon>FormDormList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegAdress.resx">
+      <DependentUpon>FormRegAdress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoomAdd.resx">
+      <DependentUpon>FormRoomAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoomList.resx">
+      <DependentUpon>FormRoomList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudAdd.resx">
+      <DependentUpon>FormStudAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudCat.resx">
+      <DependentUpon>FormStudCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudList.resx">
+      <DependentUpon>FormStudList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AnotherStudentDataSet2.xsc">
+      <DependentUpon>AnotherStudentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AnotherStudentDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnotherStudentDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnotherStudentDataSet2.xss">
+      <DependentUpon>AnotherStudentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FinalStudentDataSet2.xsc">
+      <DependentUpon>FinalStudentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FinalStudentDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalStudentDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalStudentDataSet2.xss">
+      <DependentUpon>FinalStudentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FirstDataSet.xsc">
+      <DependentUpon>FirstDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FirstDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirstDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FirstDataSet.xss">
+      <DependentUpon>FirstDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FirstDataSet1.xsc">
+      <DependentUpon>FirstDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FirstDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirstDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FirstDataSet1.xss">
+      <DependentUpon>FirstDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RegistrationDataSet.xsc">
+      <DependentUpon>RegistrationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RegistrationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegistrationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegistrationDataSet.xss">
+      <DependentUpon>RegistrationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Room11DataSet.xsc">
+      <DependentUpon>Room11DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Room11DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Room11DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Room11DataSet.xss">
+      <DependentUpon>Room11DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Room1DataSet.xsc">
+      <DependentUpon>Room1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Room1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Room1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Room1DataSet.xss">
+      <DependentUpon>Room1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudCatDataSet.xsc">
+      <DependentUpon>StudCatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudCatDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudCatDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudCatDataSet.xss">
+      <DependentUpon>StudCatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudListDataSet.xsc">
+      <DependentUpon>StudListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudListDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudListDataSet.xss">
+      <DependentUpon>StudListDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="First.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="First_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>First.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\сибирская-кошка.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
