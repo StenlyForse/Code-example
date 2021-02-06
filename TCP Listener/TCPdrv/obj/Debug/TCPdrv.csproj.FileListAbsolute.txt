@@ -1,0 +1,6 @@
+c:\users\seicadmin\documents\visual studio 2015\Projects\TCPdrv\TCPdrv\bin\Debug\TCPdrv.exe.config
+c:\users\seicadmin\documents\visual studio 2015\Projects\TCPdrv\TCPdrv\bin\Debug\TCPdrv.exe
+c:\users\seicadmin\documents\visual studio 2015\Projects\TCPdrv\TCPdrv\bin\Debug\TCPdrv.pdb
+c:\users\seicadmin\documents\visual studio 2015\Projects\TCPdrv\TCPdrv\obj\Debug\TCPdrv.csprojResolveAssemblyReference.cache
+c:\users\seicadmin\documents\visual studio 2015\Projects\TCPdrv\TCPdrv\obj\Debug\TCPdrv.exe
+c:\users\seicadmin\documents\visual studio 2015\Projects\TCPdrv\TCPdrv\obj\Debug\TCPdrv.pdb
